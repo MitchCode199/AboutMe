@@ -8,23 +8,23 @@
 
 <body class="font-primary">
   <!--NAVBAR-->
-  <div class="hidden sm:flex flex-wrap md:w-auto justify-evenly gap-64 sm:gap-5 sm:justify-between items-center py-3">
+  <div class="sticky top-0 hidden sm:flex flex-wrap md:w-auto justify-evenly gap-64 sm:gap-5 sm:justify-between items-center p-3 bg-white">
     <div><span>About</span><span>Me</span></div>
-    <ul class="border-2 border-green-500 flex gap-9">
-      <li>Home</li>
-      <li>About</li>
-      <li>Services</li>
-      <li>Portfolio</li>
-      <li>Resume</li>
-      <li>Blog</li>
-      <li>Contact</li>
+    <ul class="flex gap-9">
+      <li class="hover:bg-green-500 hover:text-white rounded-[4px] py-1 px-2 transition ease-in-out"><a href="#welcome">Home</a></li>
+      <li class="hover:bg-green-500 hover:text-white rounded-[4px] py-1 px-2 transition ease-in-out"><a href="#about-me">About</a></li>
+      <li class="hover:bg-green-500 hover:text-white rounded-[4px] py-1 px-2 transition ease-in-out"><a href="#welcome">Service</a></li>
+      <li class="hover:bg-green-500 hover:text-white rounded-[4px] py-1 px-2 transition ease-in-out"><a href="#welcome">Portfolio</a></li>
+      <li class="hover:bg-green-500 hover:text-white rounded-[4px] py-1 px-2 transition ease-in-out"><a href="#welcome">Resume</a></li>
+      <li class="hover:bg-green-500 hover:text-white rounded-[4px] py-1 px-2 transition ease-in-out"><a href="#welcome">Blog</a></li>
+      <li class="hover:bg-green-500 hover:text-white rounded-[4px] py-1 px-2 transition ease-in-out"><a href="#welcome">Contact</a></li>
     </ul>
   </div>
   <button class="p-2.5 flex md:hidden">Menu</button>
   
 
   <!--WELCOME-->
-  <div class="flex flex-wrap justify-evenly items-center gap-14 p-10 bg-amber-500">
+  <div class="flex flex-wrap justify-evenly items-center gap-14 p-10 bg-amber-500" id="welcome">
     <div class="flex flex-col gap-4 md:w-xl">
       <span>Hi, Welcome</span>
       <div class="font-[700] text-4xl"><span>I'm </span><span class="text-white">Anderson Cooper</span></div>
@@ -36,7 +36,7 @@
   </div>
 
   <!--ABOUT ME-->
-  <div class="flex flex-wrap justify-evenly items-center gap-14 p-10 bg-green-300">
+  <div class="flex flex-wrap justify-evenly items-center gap-14 p-10 bg-green-300" id="about-me">
     <img src="https://s3-alpha-sig.figma.com/img/4e8b/acf3/effe9c555f5919a237e9011ea4e690ac?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=DB-fM1TR-~tyHFAg7TBblQbxsXjcxyybErPhOReClA~SOmA5k332IgpbnyuBBL9LW7hyAkrXetNovN7FxJnxpzXAarjBBrVRWeY4luJKTnGm-66J~9a1R~JoCsQz20v6gqw9J1xE2vAQ9RkH-Iixx4nAufUX18LuX239y5cVjjFNfDfoZ6v08M8TuYIEbY5AF0mtGmSusaOjH3jIa5xAHmBA8KUr7eXNwkGOO4avLA2B2Pcohhq3DVvVat7spN9mQ9WWk5MQexIGL0gicLLU3FwLR-7atr-6Cpp5GolJ75piIF2pzkeYbnF9wZ37zhj1R9bOtBTJ9t9zYyXP2e0wQw__" class="object-cover rounded-xl w-72 h-72" alt="img2">
     <div class="flex flex-col items-start gap-4 md:w-xl">
       <div class="font-[700] text-4xl"><span class="text-black">About </span><span class="text-amber-500">Me</span></div>
