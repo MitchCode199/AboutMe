@@ -10,6 +10,8 @@
     --color-amber-500: oklch(0.769 0.188 70.08);
     --color-green-300: oklch(0.871 0.15 154.449);
     --color-green-500: oklch(0.723 0.219 149.579);
+    --color-green-600: oklch(0.627 0.194 149.214);
+    --color-green-700: oklch(0.527 0.154 150.069);
     --spacing: 0.25rem;
     --container-3xs: 16rem;
     --container-xl: 36rem;
@@ -1188,6 +1190,12 @@
   }
   .bg-green-300 {
     background-color: var(--color-green-300);
+  }
+  .bg-green-600 {
+    background-color: var(--color-green-600);
+  }
+  .bg-green-700 {
+    background-color: var(--color-green-700);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
