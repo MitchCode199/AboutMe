@@ -7,6 +7,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
+    --color-amber-500: oklch(0.769 0.188 70.08);
     --color-green-500: oklch(0.723 0.219 149.579);
     --spacing: 0.25rem;
     --text-3xl: 1.875rem;
@@ -333,6 +334,9 @@
       max-width: 96rem !important;
     }
   }
+  .my-7 {
+    margin-block: calc(var(--spacing) * 7);
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -420,6 +424,12 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-72 {
+    height: calc(var(--spacing) * 72);
+  }
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
@@ -440,6 +450,9 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-72 {
+    width: calc(var(--spacing) * 72);
   }
   .w-96 {
     width: calc(var(--spacing) * 96);
@@ -1084,6 +1097,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-amber-500 {
+    background-color: var(--color-amber-500);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1264,6 +1280,18 @@
   }
   .p-3\.5 {
     padding: calc(var(--spacing) * 3.5);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
   .text-center {
     text-align: center;
@@ -1829,6 +1857,51 @@
   }
   .transform-view {
     transform-box: view-box;
+  }
+  .sm\:h-3 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:h-10 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:h-96 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 96);
+    }
+  }
+  .sm\:h-auto {
+    @media (width >= 40rem) {
+      height: auto;
+    }
+  }
+  .sm\:w-3 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:w-10 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:w-96 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 96);
+    }
+  }
+  .md\:h-10 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:w-10 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 10);
+    }
   }
 }
 @property --tw-translate-x {
